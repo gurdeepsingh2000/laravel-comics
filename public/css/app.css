@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);header {
-  height: 500px;
+  height: 700px;
   width: 100%;
 }
 
@@ -73,20 +73,78 @@ header .lower-nav .navbar-menu input::placeholder {
 }
 
 header .header-background {
-  height: 78%;
+  height: 80%;
   background-image: url("/../../images/jumbotron.jpg");
   background-size: cover;
 }
 
 footer {
-  height: 480px;
-  border: 1px solid black;
+  height: 600px;
 }
 
 footer .background-footer {
   height: 80%;
   width: 100%;
   background-image: url("/../../images/footer-bg.jpg");
+  display: flex;
+}
+
+footer .background-footer .footer-menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+footer .background-footer .footer-menu ul {
+  width: 25%;
+  color: white;
+}
+
+footer .background-footer .footer-menu ul li {
+  color: grey;
+  list-style: none;
+}
+
+footer .background-footer .footer-logo {
+  width: 50%;
+  height: 100%;
+}
+
+footer .background-footer .footer-logo .logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer .background-footer .footer-logo .logo-container img {
+  width: 55%;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: space-between;
+  background-color: #303030;
+  height: 20%;
+  align-items: center;
+}
+
+footer .social-media .social-icons-container {
+  display: flex;
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .social-media .social-icon {
+  height: 30px;
+  width: 30px;
+}
+
+footer .social-media .social-icon img {
+  width: 100%;
 }
 
 * {
