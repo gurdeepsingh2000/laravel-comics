@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./images/dc-logo.png"/>
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+    <style>
+    .central{
+        display:flex;
+        justify-content:center;
+        height:100px;
+    }
+        </style>
     <title>@yield('title')</title>
 </head>
 <body>

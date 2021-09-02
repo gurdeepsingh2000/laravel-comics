@@ -1,1 +1,3 @@
-<DIV>FOOTER</DIV>
+<div class="background-footer">
+    
+</div>

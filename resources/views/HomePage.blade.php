@@ -2,5 +2,5 @@
 @section('title', 'HomePage - DC Comics')
 
 @section('content')
-<div>TEST</div>
+<div class = 'central'>PARTE CENTRALE</div>
 @endsection

@@ -1,12 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);header {
-  height: 100px;
-  border: 1px solid black;
+  height: 500px;
   width: 100%;
 }
 
 header .upper-nav {
-  height: 20%;
-  border: 1px solid green;
+  height: 5%;
   background-color: #0282F9;
   width: 100%;
 }
@@ -23,12 +21,72 @@ header .options-container {
 header .options-container .option-txt {
   font-size: 10px;
   color: white;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 header .lower-nav {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+header .lower-nav .navbar-menu {
+  width: 70%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+}
+
+header .lower-nav .navbar-menu .logo-container {
+  width: 50px;
+}
+
+header .lower-nav .navbar-menu .logo-container img {
+  width: 100%;
+}
+
+header .lower-nav .navbar-menu .list-options ul {
+  display: flex;
+}
+
+header .lower-nav .navbar-menu .list-options ul li {
+  margin-right: 40px;
+  list-style: none;
+}
+
+header .lower-nav .navbar-menu input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #0282F9;
+}
+
+header .lower-nav .navbar-menu input::-moz-placeholder {
+  padding-left: 65%;
+}
+
+header .lower-nav .navbar-menu input:-ms-input-placeholder {
+  padding-left: 65%;
+}
+
+header .lower-nav .navbar-menu input::placeholder {
+  padding-left: 65%;
+}
+
+header .header-background {
+  height: 78%;
+  background-image: url("/../../images/jumbotron.jpg");
+  background-size: cover;
+}
+
+footer {
+  height: 480px;
+  border: 1px solid black;
+}
+
+footer .background-footer {
   height: 80%;
-  border: 1px solid yellow;
+  width: 100%;
+  background-image: url("/../../images/footer-bg.jpg");
 }
 
 * {
