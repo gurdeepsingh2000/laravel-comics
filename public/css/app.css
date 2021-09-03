@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);header {
-  height: 700px;
+  height: 100px;
   width: 100%;
 }
 
 header .upper-nav {
-  height: 5%;
+  height: 20%;
   background-color: #0282F9;
   width: 100%;
 }
@@ -25,7 +25,7 @@ header .options-container .option-txt {
 }
 
 header .lower-nav {
-  height: 15%;
+  height: 80%;
   display: flex;
   justify-content: center;
 }
@@ -70,12 +70,6 @@ header .lower-nav .navbar-menu input:-ms-input-placeholder {
 
 header .lower-nav .navbar-menu input::placeholder {
   padding-left: 65%;
-}
-
-header .header-background {
-  height: 80%;
-  background-image: url("/../../images/jumbotron.jpg");
-  background-size: cover;
 }
 
 footer {
@@ -144,6 +138,34 @@ footer .social-media .social-icon {
 }
 
 footer .social-media .social-icon img {
+  width: 100%;
+}
+
+main {
+  height: 1000px;
+  border: 1px solid red;
+}
+
+main .main-background {
+  height: 40%;
+  background-image: url(/images/jumbotron.jpg);
+  background-size: cover;
+}
+
+main .main-poster-container {
+  border: 4px solid green;
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+
+main .main-poster-container .poster-card {
+  height: 80px;
+  width: 100px;
+  border: 1px solid red;
+}
+
+main .main-poster-container .poster-card img {
   width: 100%;
 }
 

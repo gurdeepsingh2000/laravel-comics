@@ -1,9 +1,9 @@
 header{
-    height:700px;
+    height:100px;
     width:100%;
 
     .upper-nav{
-        height:5%;
+        height:20%;
         background-color:#0282F9;
         width:100%;
     };
@@ -25,7 +25,7 @@ header{
 
 
     .lower-nav{
-        height:15%;
+        height:80%;
         display: flex;
         justify-content: center;
         
@@ -62,12 +62,6 @@ header{
                 padding-left:65%
             }
         }
-    }
-
-    .header-background{
-        height:80%;
-        background-image: url("/../../images/jumbotron.jpg");
-        background-size: cover;
     }
 
 }

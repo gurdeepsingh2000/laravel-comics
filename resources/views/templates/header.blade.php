@@ -27,7 +27,3 @@
             <input type="text" placeholder="Search">
     </div>
 </div>
-
-<div class='header-background'>
-
-</div>

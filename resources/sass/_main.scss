@@ -1,0 +1,27 @@
+main{
+    height: 1000px;
+    border: 1px solid red;
+
+    .main-background{
+        height: 40%;
+        background-image: url(/images/jumbotron.jpg);
+        background-size: cover;
+    }
+
+    .main-poster-container{
+        border: 4px solid green;
+        width:80%;
+        height:100%;
+        display: flex;
+
+        .poster-card{
+            height:80px;
+            width: 100px;
+            border: 1px solid red;
+
+            img{
+                width:100%
+            }
+        }
+    }
+}
