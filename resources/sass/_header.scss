@@ -25,11 +25,22 @@ header{
         height:80%;
         display: flex;
         justify-content: center;
-        
-        .navbar-menu{
-            height:95%;
-            display: flex;
-            align-items: center;
+        align-items: center;
+        width: 100%;
+
+        .search-button{
+            visibility: hidden;
+        }
+
+
+        .menu-button{
+            visibility: hidden;
+            color:#0282F9 ;
+            
+            i{
+                font-size: 30px;
+            }
+        }
 
             .logo-container{
                 width:50px;
@@ -39,12 +50,19 @@ header{
                 }
             }
 
+            .list-options{
+                width:100%;
+                display: flex;
+                justify-content: center;
+            }
+
+
             .list-options ul{
                 display: flex;
 
                 li{
-                    margin-right: 40px;
                     list-style: none;
+                    padding:10px
                 }
             }
         
@@ -54,10 +72,45 @@ header{
                 border-bottom: 2px solid #0282F9;
             }
 
-            input::placeholder{
+            ::placeholder{
                 padding-left:65%
             }
         }
-    }
+
 
 }
+
+
+@media only screen and (max-width: 1020px) {
+
+    .lower-nav{
+        input{
+            display: none;
+        }
+        .search-button i{
+            visibility: visible;
+            margin-left:10px
+        }
+    }
+}
+
+@media only screen and (max-width: 940px){
+    .logo-container{
+        visibility: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 880px) {
+        
+        .list-options ul li{
+            display:none;
+        };
+        .menu-button i{
+           visibility:visible;
+        }
+        .logo-container{
+            visibility: visible;
+        }
+}
+

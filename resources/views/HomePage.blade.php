@@ -3,7 +3,12 @@
 
 @section('main')
 <div class='main-background'></div>
+
 <div class='main-poster-container'>
+
+    <div class='current-series'> 
+        <div>CURRENT SERIES</div>
+    </div>
 
     @foreach($comics as $cardSingle)
     <div class='poster-card'>

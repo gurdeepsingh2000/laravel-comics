@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);header {
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css);header {
   height: 100px;
 }
 
@@ -25,47 +25,93 @@ header .lower-nav {
   height: 80%;
   display: flex;
   justify-content: center;
-}
-
-header .lower-nav .navbar-menu {
-  height: 95%;
-  display: flex;
   align-items: center;
-}
-
-header .lower-nav .navbar-menu .logo-container {
-  width: 50px;
-}
-
-header .lower-nav .navbar-menu .logo-container img {
   width: 100%;
 }
 
-header .lower-nav .navbar-menu .list-options ul {
+header .lower-nav .search-button {
+  visibility: hidden;
+}
+
+header .lower-nav .menu-button {
+  visibility: hidden;
+  color: #0282F9;
+}
+
+header .lower-nav .menu-button i {
+  font-size: 30px;
+}
+
+header .lower-nav .logo-container {
+  width: 50px;
+}
+
+header .lower-nav .logo-container img {
+  width: 100%;
+}
+
+header .lower-nav .list-options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header .lower-nav .list-options ul {
   display: flex;
 }
 
-header .lower-nav .navbar-menu .list-options ul li {
-  margin-right: 40px;
+header .lower-nav .list-options ul li {
   list-style: none;
+  padding: 10px;
 }
 
-header .lower-nav .navbar-menu input {
+header .lower-nav input {
   border: 0;
   outline: 0;
   border-bottom: 2px solid #0282F9;
 }
 
-header .lower-nav .navbar-menu input::-moz-placeholder {
+header .lower-nav ::-moz-placeholder {
   padding-left: 65%;
 }
 
-header .lower-nav .navbar-menu input:-ms-input-placeholder {
+header .lower-nav :-ms-input-placeholder {
   padding-left: 65%;
 }
 
-header .lower-nav .navbar-menu input::placeholder {
+header .lower-nav ::placeholder {
   padding-left: 65%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .lower-nav input {
+    display: none;
+  }
+
+  .lower-nav .search-button i {
+    visibility: visible;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .logo-container {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .list-options ul li {
+    display: none;
+  }
+
+  .menu-button i {
+    visibility: visible;
+  }
+
+  .logo-container {
+    visibility: visible;
+  }
 }
 
 footer {
@@ -141,6 +187,7 @@ main .main-background {
   height: 450px;
   background-image: url(/images/jumbotron.jpg);
   background-size: cover;
+  position: relative;
 }
 
 main .main-poster-container {
@@ -149,12 +196,30 @@ main .main-poster-container {
   flex-wrap: wrap;
   padding: 30px;
   background-color: #1C1C1C;
+  position: relative;
+}
+
+main .main-poster-container .current-series {
+  background-color: #0282F9;
+  width: 220px;
+  position: absolute;
+  top: -24px;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
 }
 
 main .main-poster-container .poster-card {
   width: calc(100% /6 );
   max-width: 250px;
   padding: 15px;
+  margin-top: 35px;
+  word-wrap: break-word;
 }
 
 main .main-poster-container .poster-card h3 {
@@ -164,10 +229,27 @@ main .main-poster-container .poster-card h3 {
 main .main-poster-container .poster-card .poster-image {
   height: 250px;
   overflow: hidden;
+  height: 200px;
+  width: 100%;
 }
 
-main .main-poster-container .poster-card .poster-image img {
-  width: 100%;
+@media all and (max-width: 1180px) {
+  .poster-card {
+    width: calc(100% / 4) !important;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .poster-card {
+    width: calc(100% / 3) !important;
+  }
+}
+
+@media all and (max-width: 630px) {
+  .poster-card {
+    width: calc(100% / 2) !important;
+    min-width: 200px;
+  }
 }
 
 * {

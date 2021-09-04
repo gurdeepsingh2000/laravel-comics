@@ -6,10 +6,10 @@
 </div>
 
 <div class="lower-nav">
-    <div class="navbar-menu">
             <div class='logo-container'>
                 <img src="./images/dc-logo.png" alt="logo-dc-comics">
             </div>
+
             <div class='list-options'>
                 <ul>
                     <li>CHARACTERS</li>
@@ -25,5 +25,13 @@
                 </ul>
             </div>
             <input type="text" placeholder="Search">
-    </div>
+
+            <div class = 'menu-button'>
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class = 'search-button'>
+                <i class="fas fa-search"></i>
+            </div>
+    
 </div>
