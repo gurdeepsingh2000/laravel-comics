@@ -56,6 +56,33 @@ main{
             }
         }
     }
+
+    .products-extra{
+        height:200px;
+        background-color:#0282F9;
+        display:flex;
+        justify-content:center;
+        padding:100px;
+
+        .product-card{
+            width:calc(100%/5);
+            height: 100%;
+            display:flex;
+            align-items:center;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            color: white;
+            font-weight: bold;
+
+            .product-img-container{
+                width:70px;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 

@@ -272,6 +272,33 @@ main .main-poster-container .poster-card .poster-image {
   width: 100%;
 }
 
+main .products-extra {
+  height: 200px;
+  background-color: #0282F9;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+main .products-extra .product-card {
+  width: calc(100%/5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: bold;
+}
+
+main .products-extra .product-card .product-img-container {
+  width: 70px;
+}
+
+main .products-extra .product-card .product-img-container img {
+  width: 100%;
+}
+
 @media all and (max-width: 1180px) {
   .poster-card {
     width: calc(100% / 4) !important;

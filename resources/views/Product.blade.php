@@ -102,31 +102,31 @@
 
 
         <div class="icon-card">
-            <div class='card-type'>DIGITAL COMICS</div>
                 <div class="card-container">
                     <img src="/images/buy-comics-digital-comics.png" alt="">
                 </div>
+               <div class='card-type'>DIGITAL COMICS</div>
             </div>
 
             <div class="icon-card">
-              <div class='card-type'>COMICS MERCHANDISE</div>
                 <div class="card-container">
                     <img src="/images/buy-comics-merchandise.png" alt="">
                 </div>
+              <div class='card-type'>COMICS MERCHANDISE</div>
             </div>
 
             <div class="icon-card">
-                <div class='card-type'>SHOP LOCATOR</div>
                 <div class="card-container">
                     <img src="/images/buy-comics-shop-locator.png" alt="">
                 </div>
+                <div class='card-type'>SHOP LOCATOR</div>
             </div>
 
             <div class="icon-card">
-            <div class='card-type'>SUBSCRIPTIONS</div>
                 <div class="card-container">
                 <img src="/images/buy-comics-subscriptions.png" alt="">
                 </div>
+            <div class='card-type'>SUBSCRIPTIONS</div>
             </div>
 
         </div>
