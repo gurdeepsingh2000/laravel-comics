@@ -7,7 +7,7 @@
 
 <div class="lower-nav">
             <div class='logo-container'>
-                <img src="./images/dc-logo.png" alt="logo-dc-comics">
+                <img src="/images/dc-logo.png" alt="logo-dc-comics">
             </div>
 
             <div class='list-options'>

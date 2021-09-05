@@ -185,7 +185,7 @@ footer .social-media .social-icon img {
 
 main .main-background {
   height: 450px;
-  background-image: url(/images/jumbotron.jpg);
+  background-image: url("/images/jumbotron.jpg");
   background-size: cover;
   position: relative;
 }
@@ -220,17 +220,19 @@ main .main-poster-container .poster-card {
   padding: 15px;
   margin-top: 35px;
   word-wrap: break-word;
+  text-decoration: none;
 }
 
-main .main-poster-container .poster-card h3 {
-  color: white;
+main .main-poster-container .poster-card .poster-txt a {
+  text-decoration: none;
+  color: #fff;
 }
 
 main .main-poster-container .poster-card .poster-image {
   height: 250px;
   overflow: hidden;
   height: 200px;
-  width: 100%;
+  width: 76%;
 }
 
 @media all and (max-width: 1180px) {
@@ -243,6 +245,10 @@ main .main-poster-container .poster-card .poster-image {
   .poster-card {
     width: calc(100% / 3) !important;
   }
+
+  .poster-card .poster-card {
+    text-decoration: none;
+  }
 }
 
 @media all and (max-width: 630px) {
@@ -250,6 +256,210 @@ main .main-poster-container .poster-card .poster-image {
     width: calc(100% / 2) !important;
     min-width: 200px;
   }
+}
+
+.product-background {
+  height: 450px;
+  background-image: url("/images/jumbotron.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.product-splitter {
+  width: 100%;
+  height: 80px;
+  background-color: #0282F9;
+  position: relative;
+}
+
+.product-poster {
+  width: 260px;
+  position: absolute;
+  bottom: -20px;
+  left: 20%;
+  top: 208px;
+}
+
+.product-poster img {
+  width: 100%;
+}
+
+.product-description-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.product-description-container img {
+  width: 100%;
+}
+
+.product-info {
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+
+.product-info .product-advertising {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-info .product-advertising .ad-container {
+  width: 80%;
+}
+
+.product-info .product-description {
+  width: 60%;
+}
+
+.product-info .product-description .product-txt-description {
+  width: 100%;
+  line-height: 30px;
+}
+
+.product-info .product-price {
+  width: 100%;
+  height: 80px;
+  background-color: #55BA59;
+  display: flex;
+}
+
+.product-info .product-price .price {
+  height: 100%;
+  width: 60%;
+  border-right: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-info .product-price .price .price-usd {
+  display: flex;
+  align-items: center;
+}
+
+.product-info .product-price .price p {
+  color: #A3F287;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.product-info .product-price .price span {
+  color: white;
+}
+
+.product-info .product-price .product-availability {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.product-info .product-price .availability {
+  color: #A3F287;
+  margin-right: 8px;
+}
+
+.container-talent-specs {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-talent-specs .section-talent-specs {
+  height: 100%;
+  width: 60%;
+  display: flex;
+}
+
+.container-talent-specs .section-talent-specs .talent {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  height: 100px;
+}
+
+.container-talent-specs .section-talent-specs .talent .text-container {
+  width: 50%;
+  font-size: 0.8rem;
+  margin-right: 40px;
+}
+
+.container-talent-specs .section-talent-specs .talent-container {
+  height: 100%;
+  width: 50%;
+}
+
+.container-talent-specs .section-talent-specs .talent-container h3 {
+  color: #03416F;
+  height: 70px;
+  border-bottom: 1px solid grey;
+}
+
+.container-talent-specs .specs-container {
+  height: 100%;
+  width: 50%;
+}
+
+.container-talent-specs .specs-container .specs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  height: 50px;
+}
+
+.container-talent-specs .specs-container .specs .text-container {
+  margin-right: 20px;
+}
+
+.container-talent-specs .specs-container h3 {
+  color: #03416F;
+  height: 70px;
+  border-bottom: 1px solid grey;
+}
+
+.bottom-icons-container {
+  border: 1px solid grey;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+
+.bottom-icons-container .bottom-icons {
+  width: 60%;
+  border: 1px solid grey;
+  height: 100%;
+  display: flex;
+}
+
+.bottom-icons-container .bottom-icons .icon-card {
+  width: calc(100% /4);
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-around;
+}
+
+.bottom-icons-container .bottom-icons .icon-card .card-type {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #d8d8d8;
+}
+
+.bottom-icons-container .bottom-icons .icon-card .card-container {
+  width: 50px;
+}
+
+.bottom-icons-container .bottom-icons .icon-card .card-container img {
+  width: 100%;
+  background: #d8d8d8;
+  height: 78%;
 }
 
 * {

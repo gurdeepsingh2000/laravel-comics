@@ -14,10 +14,10 @@
     <div class='poster-card'>
 
         <div class='poster-image'>
-            <img src='{{$cardSingle["thumb"]}}' alt="">
+        <a href="{{ route('product', [ 'id' => $loop->iteration ]) }}"><img src='{{$cardSingle["thumb"]}}'></a>
         </div>
 
-        <h3>{{ $cardSingle[ "title" ]}}</h3>
+        <div class='poster-txt'><a href="{{ route('product', [ 'id' => $loop->iteration ]) }}"><h3>{{ $cardSingle[ "title" ]}} </h3></a></div>
 
     </div>
     @endforeach

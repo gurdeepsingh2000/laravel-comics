@@ -20,3 +20,15 @@ Route::get('/', function () {
         'comics' => $cards
     ]);
 })->name('home');
+
+
+Route::get('/card/{id}', function ($id) {
+    $arrayIndex = $id - 1;
+
+    $product = config('comics');
+
+    return view("Product",[
+        "arrayIndex" => $arrayIndex,
+        "card" => $product
+    ]);
+})->name('product');
