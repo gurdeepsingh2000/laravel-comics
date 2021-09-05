@@ -119,7 +119,6 @@ footer {
 }
 
 footer .background-footer {
-  height: 80%;
   width: 100%;
   background-image: url("/../../images/footer-bg.jpg");
   display: flex;
@@ -127,7 +126,6 @@ footer .background-footer {
 
 footer .background-footer .footer-menu {
   width: 50%;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -161,10 +159,17 @@ footer .background-footer .footer-logo .logo-container img {
 
 footer .social-media {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #303030;
   height: 20%;
   align-items: center;
+}
+
+footer .social-media button {
+  border: 5px solid #0282F9;
+  background-color: #303030;
+  color: white;
+  padding: 20px;
 }
 
 footer .social-media .social-icons-container {
@@ -181,6 +186,12 @@ footer .social-media .social-icon {
 
 footer .social-media .social-icon img {
   width: 100%;
+}
+
+@media screen and (min-width: 1060px) {
+  .footer-logo {
+    visibility: visible;
+  }
 }
 
 main .main-background {
@@ -232,7 +243,7 @@ main .main-poster-container .poster-card .poster-image {
   height: 250px;
   overflow: hidden;
   height: 200px;
-  width: 76%;
+  width: 100%;
 }
 
 @media all and (max-width: 1180px) {
@@ -255,6 +266,12 @@ main .main-poster-container .poster-card .poster-image {
   .poster-card {
     width: calc(100% / 2) !important;
     min-width: 200px;
+  }
+
+  .current-series {
+    width: 180px !important;
+    padding: 10px !important;
+    font-size: 12px !important;
   }
 }
 
@@ -438,7 +455,7 @@ main .main-poster-container .poster-card .poster-image {
 }
 
 .bottom-icons-container .bottom-icons .icon-card {
-  width: calc(100% /4);
+  width: calc(100% / 4);
   border-right: 1px solid grey;
   border-left: 1px solid grey;
   display: flex;
@@ -447,19 +464,20 @@ main .main-poster-container .poster-card .poster-image {
 }
 
 .bottom-icons-container .bottom-icons .icon-card .card-type {
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: bold;
   color: #d8d8d8;
 }
 
 .bottom-icons-container .bottom-icons .icon-card .card-container {
   width: 50px;
+  height: 60px;
 }
 
 .bottom-icons-container .bottom-icons .icon-card .card-container img {
   width: 100%;
   background: #d8d8d8;
-  height: 78%;
+  height: 100%;
 }
 
 * {

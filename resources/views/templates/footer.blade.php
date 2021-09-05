@@ -53,7 +53,7 @@
 
 
         <div class="social-media">
-            <div><button>SIGN UP NOW!</button></div>
+            <div><button>SIGN-UP NOW!</button></div>
 
             <div class="social-icons-container">
                 <span>FOLLOW US!</span>

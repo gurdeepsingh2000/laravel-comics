@@ -180,7 +180,7 @@
         
 
         .icon-card{
-            width: calc(100% /4);
+            width: calc(100% / 4);
             border-right: 1px solid grey;
             border-left: 1px solid grey;
             display: flex;
@@ -188,20 +188,20 @@
             justify-content:space-around;
 
             .card-type{
-                font-size: 1rem;
+                font-size: 14px;
                 font-weight: bold;
                 color:#d8d8d8;
             }
 
             .card-container{
                 width: 50px;
+                height:60px;
 
 
                 img{
                     width: 100%;
                     background: #d8d8d8;
-                    height:78%
-
+                    height:100%
                 }
             }
         }

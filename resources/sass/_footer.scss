@@ -2,14 +2,12 @@ footer{
     height:600px;
 
     .background-footer{
-        height:80%;
         width:100%;
         background-image:url("/../../images/footer-bg.jpg");
         display:flex;
 
         .footer-menu{
             width: 50%;
-            height:100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
@@ -50,10 +48,17 @@ footer{
     }
     .social-media{
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
         background-color:#303030;
         height:20%;
         align-items: center;
+
+        button{
+            border: 5px solid #0282F9;
+            background-color: #303030;
+            color: white;
+            padding: 20px;
+        }
 
         .social-icons-container{
             display:flex;
@@ -74,4 +79,11 @@ footer{
             }
         }
     }
+}
+
+@media screen and (min-width: 1060px){
+    .footer-logo{
+            visibility: visible;
+    }
+
 }
