@@ -6,9 +6,11 @@
 </div>
 
 <div class="lower-nav">
-            <div class='logo-container'>
-                <img src="/images/dc-logo.png" alt="logo-dc-comics">
-            </div>
+            <a href="{{ route('home') }}">
+                    <div class='logo-container'>
+                        <img src="/images/dc-logo.png" alt="logo-dc-comics">
+                     </div>
+                </a>
 
             <div class='list-options'>
                 <ul>

@@ -43,7 +43,7 @@ header .lower-nav .menu-button i {
 }
 
 header .lower-nav .logo-container {
-  width: 50px;
+  width: 80px;
 }
 
 header .lower-nav .logo-container img {
@@ -54,6 +54,16 @@ header .lower-nav .list-options {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+header .lower-nav .list-options a {
+  text-decoration: none;
+  color: black;
+}
+
+header .lower-nav .list-options a:hover {
+  border-bottom: 3px solid #0282F9;
+  margin-bottom: -1px;
 }
 
 header .lower-nav .list-options ul {
@@ -92,11 +102,23 @@ header .lower-nav ::placeholder {
     visibility: visible;
     margin-left: 10px;
   }
+
+  .footer-menu {
+    width: 100% !important;
+  }
+
+  .footer-logo {
+    visibility: hidden;
+  }
 }
 
 @media only screen and (max-width: 940px) {
   .logo-container {
     visibility: hidden;
+  }
+
+  .background-footer {
+    flex-wrap: wrap;
   }
 }
 
@@ -108,14 +130,12 @@ header .lower-nav ::placeholder {
   .menu-button i {
     visibility: visible;
   }
-
-  .logo-container {
-    visibility: visible;
-  }
 }
 
-footer {
-  height: 600px;
+@media only screen and (max-width: 500px) {
+  .footer-menu ul li {
+    display: none;
+  }
 }
 
 footer .background-footer {
@@ -175,8 +195,14 @@ footer .social-media button {
 footer .social-media .social-icons-container {
   display: flex;
   width: 20%;
-  display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .social-media .social-icons-container span {
+  color: #0282F9;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 footer .social-media .social-icon {

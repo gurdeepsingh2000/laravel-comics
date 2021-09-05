@@ -1,6 +1,5 @@
 footer{
-    height:600px;
-
+    
     .background-footer{
         width:100%;
         background-image:url("/../../images/footer-bg.jpg");
@@ -63,8 +62,14 @@ footer{
         .social-icons-container{
             display:flex;
             width:20%;
-            display: flex;
             justify-content: space-evenly;
+            align-items: center;
+
+            span{
+                color:#0282F9;
+                font-size:20px;
+                font-weight:bolder
+            }
         }
 
         
